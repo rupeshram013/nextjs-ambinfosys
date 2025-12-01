@@ -1,0 +1,88 @@
+
+
+#advertisement {
+    background: #7fcceb;
+    background: radial-gradient(circle, rgba(127, 204, 235, 1) 0%, rgba(55, 73, 173, 1) 65%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 1%;
+    z-index: -100;
+    
+
+}
+
+#advertisement #text{
+    margin-right: 0px;
+    color: white;
+    /* background-color: red; */
+    margin-left: 50%;
+
+}
+
+#advertisement #text h1{
+
+}
+
+#advertisement #text p{
+}
+
+
+
+#advertisement img{
+    width: 40%;
+    margin-top: 10%;
+    /* background-color: black; */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.product-box {
+    padding: 5%;
+    padding-top: 2.5%;
+}
+.product-box  h1{
+    text-transform: uppercase;
+    color: rgb(49, 49, 49);
+    font-size: 3.5em;
+    text-align: center;
+
+}
+
+
+.product-box .inner-box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    overflow: scroll;
+    height: 400px;
+}
+
+
+.product-box .seemore{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(141, 141, 141);
+    display: block;
+    margin-top: 35px;
+    font-size: 1.5em;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.product-box .seemore:hover{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(179, 19, 19);
+    display: block;
+    margin-top: 35px;
+    font-size: 1.5em;
+}
+
+

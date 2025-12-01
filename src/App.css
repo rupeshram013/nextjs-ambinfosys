@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+#top-poster {
+  width: 100%;
+  image-rendering:auto;
+}
+
+
+#category {
+  width: 80%;
+  display: none;
+}
+
+
+#category #images {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;                                                    
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+#category #images .category-item {
+  width: 5em;
+}
+
+
+
+#category #images .category-item img {
+  width: 100%;
+}

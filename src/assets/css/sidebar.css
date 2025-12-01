@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#sidebar{
+    position: fixed;
+    background: #1f5bca;
+    /* background: linear-gradient(64deg, rgba(17, 234, 250, 1) 0%, rgba(74, 88, 207, 1) 93%); */
+    height: 100vh;
+    display: none;
+    width: 250px;
+    box-shadow: 1px 1px 20px 1px rgb(6, 64, 117);
+
+}
+
+#sidebar #top {
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+#sidebar #top  h1{
+    color: rgb(179, 207, 229)
+
+}
+
+#sidebar #top button {
+    background-color: transparent;
+    border: 0px;
+
+}
+
+#sidebar #top img {
+    width: 50px;
+
+}
+
+#sidebar #mid {
+    font-family: "Roboto", sans-serif;
+    margin-top: 10%;
+
+}
+
+#sidebar #mid h1{  
+    border-bottom: 0px solid rgba(255, 255, 255, 0.582);
+    padding: 0.5em;
+    margin-right: auto;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+#sidebar #mid #links {
+    text-align: center;
+
+}
+
+#sidebar #mid #links a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 0.1em;
+    font-size: 1.5em;
+    font-weight: 1000;
+    color: white;
+
+}
+
+#sidebar #bottom {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100%;
+
+}
+
+#sidebar #bottom img {
+    width: 50px;
+    margin: auto;
+
+}
