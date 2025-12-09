@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Bebas Neue */
+/* Montserrat */
+/* Roboto */
+/* Oswald */
+
+
+#advertisement {
+    /* background: #91c0f2;
+background: radial-gradient(circle, rgba(145, 192, 242, 1) 0%, rgba(69, 116, 173, 1) 27%, rgba(24, 69, 138, 1) 60%); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 1%;
+    z-index: -100;
+
+background: #f792b5;
+background: linear-gradient(0deg, rgb(228, 205, 4) 0%, rgb(15, 107, 182) 46%, rgba(24, 69, 138, 1) 84%);
+    position: relative;
+
+}
+
+
+#advertisement #text{
+    position: absolute;
+    top: 15vh;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    background-color: rgba(255, 0, 0, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#advertisement #ad-links{
+/* 
+        position: absolute;
+    top: 15vh; */
+/* 
+    left: 50%;
+    transform: translateX(-50%); */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 0, 0, 0);
+    width: 20%;
+    gap: 2em;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    margin-top: 5em;
+}
+
+#advertisement #ad-links a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    font-weight: 400;
+    font-family: 'arial';
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 80px;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    position: relative;
+    z-index: 1000;
+    text-transform: uppercase;
+
+}
+
+#advertisement #ad-links a:hover{
+    background-color: transparent;
+    color: black;
+}
+
+
+#advertisement #text #ad-title{
+    margin-top: 0px;
+    color: rgb(18, 19, 18);
+    font-size: 8em;
+    margin-bottom: 0px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: 1000;
+    background: linear-gradient(
+        to top, 
+        transparent 0%,     /* bottom fully erased */
+        rgba(255, 255, 255, 0) 20%, 
+        rgba(255, 255, 255, 0.795) 50%, 
+        rgb(255, 255, 255) 100%          /* top fully white */
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100vw;
+}
+
+#advertisement #text #ad-description{
+    margin-top: 25%;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: center;
+    color: rgba(14, 2, 58, 0.952);
+    letter-spacing: 0.2em;
+    border-top: 1px solid rgba(219, 255, 255, 0.116);
+    padding-top: 1em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#advertisement img{
+    width: 600px;
+    margin-top: 13%;
+    /* background-color: black; */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.product-box {
+    padding: 5%;
+    padding-top: 2.5%;
+}
+.product-box  h1{
+    text-transform: uppercase;
+    color: rgb(49, 49, 49);
+    font-size: 3.5em;
+    text-align: center;
+
+}
+
+
+.product-box .inner-box {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    overflow: scroll;
+    height: 400px;
+}
+
+
+.product-box .seemore{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(141, 141, 141);
+    display: block;
+    margin-top: 35px;
+    font-size: 1.5em;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.product-box .seemore:hover{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(179, 19, 19);
+    display: block;
+    margin-top: 35px;
+    font-size: 1.5em;
+}
+
+

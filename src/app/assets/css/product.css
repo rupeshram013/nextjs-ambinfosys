@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+img{
+    width: 100%;
+    
+}
+
+#product {
+    width: 250px;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0px 1px 15px -3px rgba(0, 0, 0, 0.267);
+    display: block;
+    text-decoration: none;
+    border-radius: 1em;
+}
+
+#product #top{
+    display: flex;
+    margin-bottom: 2em;
+}
+#product #top #left{
+    width: 75%;
+    display: flex;
+
+}
+
+#product #top #right button{
+    width: 25%;
+    margin-left: 75%;
+    border: 0px;   
+    background-color: transparent;   
+}
+
+#product #top #left img{
+    padding: 0.2em;
+}
+#product #top #right{
+    width: 50%;
+
+}
+
+
+#product #bottom {
+
+}
+
+#product #bottom #description {
+    text-decoration: none;
+    text-align: center;
+}
+#product #bottom #description h1 {
+    font-size: 1.3em;
+    height: 3em;
+    overflow: hidden;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: rgb(24, 24, 24);
+  font-family: "Bebas Neue", sans-serif;
+}
+#product #bottom #description p{
+    font-size: 1em;
+    color: rgb(87, 87, 87);
+    height: 5.5em;
+    overflow: hidden;
+    margin-top: 1em;
+    line-height: 1.3em;
+    font-family: 'Osward' , 'sans-serif';
+}
+#product #bottom #description h2{
+    font-family: 'roboto' , 'sans-serif';
+    color: red;
+    font-weight: 600;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    font-size: 1.7em;
+    margin-top: 1em;
+}
+
+#product #bottom #image {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+      /* box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.247); */
+    margin: auto;
+}
+#product #bottom #image img {
+    width: 100%;
+    margin: auto;
+
+    object-fit:fill;
+}

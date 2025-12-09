@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+#navbar {
+    position: absolute ;
+    display: flex;
+    z-index: 0;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: rgb(24, 69, 138);
+    /* background-color: #18458a; */
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.514);
+}
+
+#navbar a {
+  font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#navbar img{
+
+}
+
+#navbar button{
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    margin-top: 30px;
+    opacity: 0.7;
+
+}
+
+#navbar button img{
+    width: 20px;
+}
+
+#navbar #left{
+    padding-top: 1em;
+    background-color: transparent;
+    display: flex;
+    gap: 2em;
+    margin-bottom: auto;
+    width: 25%;
+}
+
+#navbar a {
+
+}
+
+#navbar #left button {
+    position: fixed;
+}
+
+#navbar #left a {
+    margin-left: 3em;
+    width: 100px;
+    display: block;
+    background-color: transparent;
+}
+
+#navbar #left a img {
+    width: 50px;
+
+}
+
+#navbar #mid{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    padding: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: auto;
+    overflow: scroll;
+    width: 50%;
+}
+
+#navbar #mid a {
+    background-color: transparent;
+    display: block;
+    color: white;
+    font-weight: 1000;
+    text-transform: uppercase;
+    border-radius: 0px; 
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(255, 255, 255, 0.24);
+    
+}
+
+#navbar #mid a:hover {
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(255, 255, 255);
+
+
+}
+
+
+#navbar #right{
+    margin-top: 2.5em;
+    margin-bottom: auto;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    gap: 2em;
+    width: 25%;
+
+}
+
+
+#navbar #right a img {
+    
+    width: 25px;
+    height: 20px;
+    border-right: 1px solid white;
+    padding-right: 0.5em;
+}
+
+#navbar #right a {
+    
+    opacity: 0.7;
+    display: block;
+    display: flex;
+
+    transition:  opacity 500ms ease-out ;
+}
+
+#navbar #right a:hover{
+    opacity: 1;
+    transition:  opacity 250ms ease-out ;
+}
+#navbar #right a p{
+    
+    padding-left: 0.5em;
+    margin-top:auto;
+    margin-bottom: auto;
+    color: white;
+    font-weight: 1000;
+    text-transform: uppercase;
+
+}
+

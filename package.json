@@ -9,9 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "axios": "^1.13.2",
+    "mysql2": "^3.15.3",
+    "net": "^1.0.2",
     "next": "16.0.6",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-router-dom": "^7.10.0",
+    "tls": "^0.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,7 +26,6 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.6",
-    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }
