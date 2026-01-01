@@ -2,14 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
+
+
 #sidebar{
     position: fixed;
-    background: #1f5bca;
+    background: #ffffff;
     /* background: linear-gradient(64deg, rgba(17, 234, 250, 1) 0%, rgba(74, 88, 207, 1) 93%); */
     height: 100vh;
-    display: none;
+    display: block;
     width: 250px;
     box-shadow: 1px 1px 20px 1px rgb(6, 64, 117);
+    padding-right: 1em;
 
 }
 
@@ -20,8 +24,10 @@
 }
 
 #sidebar #top  h1{
-    color: rgb(179, 207, 229)
-
+    color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: row;
+    background-color: red;
 }
 
 #sidebar #top button {
@@ -45,38 +51,112 @@
     border-bottom: 0px solid rgba(255, 255, 255, 0.582);
     padding: 0.5em;
     margin-right: auto;
-    color: white;
-    font-size: 1em;
+    color: rgb(17, 17, 17);
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
+    display: flex;
+
+    
+}
+
+#sidebar #mid h1 img{
+    width: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.5em;
 }
 
 
 #sidebar #mid #links {
-    text-align: center;
-
+    text-align: left;
+    padding-left: 2em;
+    width: 85%;
+    margin-left: auto;
+    /* border-left: 1px solid rgba(68, 68, 68, 0.425); */
+    height: 20vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scrollbar-color: rgba(255, 255, 255, 0.336) rgba(255, 255, 255, 0);
+    scrollbar-arrow-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    
+    /* box-shadow: 0px 10px 7px -7px rgba(214, 214, 214, 0.308); */
 }
+
 
 #sidebar #mid #links a {
     display: block;
     color: black;
     text-decoration: none;
-    margin-top: 0.1em;
+    margin-bottom: 0.1em;
     font-size: 1.5em;
-    font-weight: 1000;
-    color: white;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    width: 75%;
+    margin-right: auto;
+    border-radius: 0.5em;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    padding: 0.1em;
 
+}
+#sidebar #mid #links a:hover {
+        background-color: rgba(255, 255, 255, 0.473);
 }
 
 #sidebar #bottom {
-    width: 50%;
+    width: 95%;
     margin: auto;
     text-align: center;
-    margin-top: 100%;
+    margin-top: 25px;
+    background-color: rgba(255, 0, 0, 0);
 
 }
+
+#sidebar #bottom h1 {
+    border-bottom: 0px solid rgba(255, 255, 255, 0.582);
+    padding: 0.5em;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+    font-size: 1.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+    opacity: 0.9;
+    width: 100%;
+    gap: 0.2em;
+}
+
+#sidebar #bottom h1 img{
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.5em;
+    margin-left: 0px;
+}
+
+
+#sidebar #bottom h1:hover{
+    opacity: 1;
+}
+
 
 #sidebar #bottom img {
     width: 50px;
     margin: auto;
 
+}
+
+
+#sidebar #bottom #links{
+
+}
+
+#sidebar #bottom #links a{
+    display: block;
 }

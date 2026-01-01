@@ -84,8 +84,10 @@
     gap: 1em;
     margin-top: 2em;
     margin-bottom: auto;
-    overflow: scroll;
+    overflow-x: auto;
     width: 50%;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 
 #navbar #mid a {
@@ -123,7 +125,7 @@
 
 #navbar #right a img {
     
-    width: 25px;
+    width: 30px;
     height: 20px;
     border-right: 1px solid white;
     padding-right: 0.5em;

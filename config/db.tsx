@@ -1,27 +1,36 @@
 // lib/db.ts (or .js)
 import mysql from 'mysql2/promise';
 
-// Create a connection pool for efficiency
-const pool = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
-  port: parseInt(process.env.DB_PORT || '3306', 10),
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
+
+
+export const database = mysql.createPool({
+  host: 'localhost',
+  user: 'rupeshram013',
+  password: 'admin013',
+  database:'ambinfos_data',
 });
 
 
-export default pool
 
-// try{
-//     const connection = await pool.getConnection();
-//     console.log('Database Connected Sucessfully!!');
-//     connection.release(); 
-// } catch (err){
+try {
+  const connection = await database.getConnection();
+  console.log("Database Query executed Sucessfully ;");
+  connection.release();
 
-//     console.error("Database Connection Was not Established" , err);
-//     process.exit(1);
-// }
+}catch (error){
+  console.error("Error was Occured on the database :", error)
+  process.exit(1);
+
+}
+
+
+
+export async function readingdata( query : string , data : string){
+
+  const res = await database.execute(query , data);
+  return res
+  
+}
+
+
+

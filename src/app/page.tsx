@@ -1,39 +1,17 @@
-'use client'
+
 import './assets/css/home.css' 
 import Product from './components/product'
 import advertisement_1 from './assets/images/advertisement/ad-0.png'
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect , useState } from 'react';
 import axios from 'axios';
 import { json } from 'stream/consumers';
-import pool from '../../config/db';
+import { database } from '../../config/db';
+
+
+export default async function Home(){
+
   
-type ProductProps = {
-
-  title:string,
-  description:string,
-  price:number,
-  image:string
-
-}
-
-
-async function getproducts(): Promise<ProductProps[]> {
-  const res = await fetch("https://fakestoreapi.com/products")
-  if(!res.ok) {
-    throw new Error("Api Couldn't Read Data")
-  }
-
-  return res.json();
-}
-
-export default async function Home() {
-
-
-  const allproducts = await pool.execute('select * from products');
-
-  const mainproduct = await getproducts();
 
   return (
     <div>
@@ -62,13 +40,7 @@ export default async function Home() {
 
           <div className="inner-box">
 
-            {mainproduct
-            .slice(8,15)
-            .map((products) => (
 
-              <Product title={products.title} description={products.description} price={products.price} image={products.image}></Product>
-              
-            ))}
           </div>
 
           <Link href='/category/laptop' className='seemore'>See More</Link>
@@ -79,41 +51,3 @@ export default async function Home() {
 }
 
 
-
-
-const productquery = (urlpath :string) => {
-
-  const [products , setProductData] = useState([])  
-  const[error, setError] = useState(false)
-  const[loading , setLoading] = useState(false)
-
-
-
-  useEffect(() => {
-
-    // axios.get('https://fakestoreapi.com/products')
-    ;(async () => {
-      try {
-        setLoading(true)
-        setError(false)
-        const response = await axios.get(urlpath)
-        setProductData(response.data)
-        setLoading(false)
-      } catch (error) {
-        setError(true);
-        setLoading(false)
-      }
-    })()        
-
-  
-
-  },[])
-
-
-  return{
-    products,
-    error,
-    loading
-  }
-  
-}

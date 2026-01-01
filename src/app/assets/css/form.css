@@ -14,7 +14,7 @@
     background: #77b5f7;
     background: linear-gradient(182deg, rgb(10, 71, 136) 23%, rgb(28, 158, 233) 93%);
     position: absolute;
-    width: 100vw;
+    width: 100%;
 }
 
 #formbox {

@@ -7,7 +7,6 @@ import category from '../assets/images/logos/menuwhite.png'
 import login from '../assets/images/logos/userwhite.png'
 import Sidebar from './sidebar'
 import '../assets/css/navbar.css'
-
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'

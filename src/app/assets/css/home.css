@@ -6,6 +6,11 @@
 /* Oswald */
 
 
+body{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
 #advertisement {
     /* background: #91c0f2;
 background: radial-gradient(circle, rgba(145, 192, 242, 1) 0%, rgba(69, 116, 173, 1) 27%, rgba(24, 69, 138, 1) 60%); */
@@ -14,33 +19,33 @@ background: radial-gradient(circle, rgba(145, 192, 242, 1) 0%, rgba(69, 116, 173
     height: 100vh;
     padding: 1%;
     z-index: -100;
-
+    
 background: #f792b5;
 background: linear-gradient(0deg, rgb(228, 205, 4) 0%, rgb(15, 107, 182) 46%, rgba(24, 69, 138, 1) 84%);
     position: relative;
-
 }
 
 
 #advertisement #text{
     position: absolute;
     top: 15vh;
-
     left: 50%;
     transform: translateX(-50%);
 
     color: white;
     background-color: rgba(255, 0, 0, 0);
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* width: 99vw;
+    background-color: red; */
 }
 
 #advertisement #ad-links{
-/* 
-        position: absolute;
+    /* 
+    position: absolute;
     top: 15vh; */
 /* 
     left: 50%;
@@ -103,11 +108,11 @@ background: linear-gradient(0deg, rgb(228, 205, 4) 0%, rgb(15, 107, 182) 46%, rg
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 100vw;
+    width: 100%;
 }
 
 #advertisement #text #ad-description{
-    margin-top: 25%;
+    margin-top: 60%;
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 600;
@@ -152,8 +157,9 @@ background: linear-gradient(0deg, rgb(228, 205, 4) 0%, rgb(15, 107, 182) 46%, rg
     justify-content: center;
     gap: 2em;
     align-items: center;
-    overflow: scroll;
+    overflow-x: scroll;
     height: 400px;
+    scrollbar-width: thin;
 }
 
 
