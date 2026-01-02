@@ -1,5 +1,6 @@
 // lib/db.ts (or .js)
 import mysql from 'mysql2/promise';
+import { data } from 'react-router-dom';
 
 
 
@@ -30,6 +31,14 @@ export async function readingdata( query : string , data : string){
   const res = await database.execute(query , data);
   return res
   
+}
+
+
+
+export async function signup(token : number , FirstName:string , SecondName : string , UserName: string , Email : string , Password : string){
+
+  const res = await database.execute("insert into users (token , firstname , secondname , username , usermail , userpass) values (? , ? ,? ,?)" , [token , FirstName , SecondName , UserName , Email , Password] )
+  return res;
 }
 
 
