@@ -13,20 +13,29 @@ export default async function ProductPage({params}:{
 }){
    
    const name = (await params).name   
+   
    const productname = name.replace(/%20/g, ' ');
+   const finalname = productname.replace(/%22/g , '"')
+   console.log("THE PRODUCT NAME :" , finalname)
 
-   const data = await readingdata("select * from products where pname = ? " , [productname]);
-   const id = await readingdata("select id from products where pname = ? " , [productname]);
+   // const data = await readingdata("select * from products where pname = ? " , [productname]);
+   // const id = await readingdata("select id from products where pname = ? " , [productname]);
    
    
-   const productstruct= 
-   {
-         product : data[0],
-         id : id[0][0].id,
-         category : data[0][0].category
-   }
+   // const productstruct= 
+   // {
+   //       product : data[0],
+   //       id : id[0][0].id,
+   //       category : data[0][0].category
+   // }
    
-   const specification = await readingdata(`select * from ${productstruct.category} where id = ${productstruct.id} ` , []);
+   // const specification = await readingdata(`select * from ${productstruct.category} where id = ${productstruct.id} ` , []);
+
+
+
+   const products = await fetch("localhost:3000/api/product/")
+
+
 
    return(
       <div>

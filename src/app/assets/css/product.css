@@ -22,138 +22,82 @@ img{
 
 }
 
-#product {
-    width: 75vw;
-    margin-left: AUTO;
-    margin-right: AUTO;
-    background-color: white;
-    padding: 1em;
-    box-shadow: 0px 1px 15px -3px rgba(0, 0, 0, 0.267);
+#product-card{
+    width: 16vw;
+    height: 32vh;
     display: block;
-    text-decoration: none;
+    margin: auto;
+    margin-bottom: 3em;
     border-radius: 1em;
-    margin-top: 10%;
-
+    box-shadow: 1px 1px 10px 1px rgb(194, 194, 194);
+    padding: 0.5em;
 }
 
-#product #top{
+#product-card #top {
     display: flex;
-    margin-bottom: 2em;
+    padding: 1em;
+
 }
-#product #top #left{
-    width: 75%;
+
+#product-card #top img{
+    width: 20px;
+
+}
+
+#product-card #top #left{
     display: flex;
+    gap: 0.5em;
+}
+
+#product-card #top #left img{
+    width: 18px;
+    height: 18px;
+    margin-top: auto;
+}
+
+#product-card #top #right{
+    margin-left: auto;
 
 }
 
-#product #top #right form button{
-    border: 0px;
-    background-color: red;
-    color: white;   
-    font-size: 1.7em;
-    width: 100%;
-    font-weight: 1000;
-    border-radius: 0.5em;
-    padding: 0.1em;
-    margin-top: 2em;
-    /* background-color: transparent;    */
-}
-
-#product #top #right h1{
-    font-size: 3em;
-    text-transform: uppercase;
-    font-weight: 1000;
-    line-height: 1em;
-}
-
-#product #top #right h6{
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 1000;
-    opacity: 0.7;
-}
-
-#product #top #right p {
-    font-size: 1.5em;
-    height: 4em;
-    line-height: 1.3em;
-    overflow: hidden;
-    opacity: 0.7;
-    margin-bottom: 2em;
-}
-
-#product #top #right #price {
-    font-size: 1.7em;
-    font-weight: 1000;
-    color: red;
-
-
-}
-
-
-#product #top #right form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-right: auto;
-}
-
-#product #top #left img{
-    padding: 0.2em;
-}
-#product #top #right{
-    width: 50%;
-
-}
-
-
-#product #bottom {
-
-}
-
-#product #bottom #description {
-    text-decoration: none;
-    text-align: center;
-}
-#product #bottom #description h1 {
-    font-size: 1.3em;
-    height: 3em;
-    overflow: hidden;
-    font-weight: 1000;
-    text-transform: uppercase;
-    color: rgb(24, 24, 24);
-  font-family: "Bebas Neue", sans-serif;
-}
-#product #bottom #description p{
-    font-size: 1em;
-    color: rgb(87, 87, 87);
-    height: 5.5em;
-    overflow: hidden;
-    margin-top: 1em;
-    line-height: 1.3em;
-    font-family: 'Osward' , 'sans-serif';
-}
-#product #bottom #description h2{
-    font-family: 'roboto' , 'sans-serif';
-    color: red;
-    font-weight: 600;
-    margin-bottom: 0px;
-    letter-spacing: 1px;
-    font-weight: 1000;
-    font-size: 1.7em;
-    margin-top: 1em;
-}
-
-#product #bottom #image {
+#product-card #imagebox {
     width: 150px;
-    height: 100px;
+    height: 150px;
     overflow: hidden;
-      /* box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.247); */
     margin: auto;
 }
-#product #bottom #image img {
-    width: 100%;
-    margin: auto;
 
-    object-fit:fill;
+#product-card #imagebox img{
+    width: 100%;
+
+}
+
+#product-card #bottom {
+    text-align: center;
+
+}
+#product-card #bottom h5 {
+    font-size: 1.5em;
+    text-transform: uppercase;  
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    height: 1.2em;
+    overflow: hidden;
+}
+#product-card #bottom h6 {
+    font-weight: 100;
+    height: 1.5em;
+    overflow: hidden;  
+    font-family: 'Khula';
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;  
+}
+#product-card #bottom #price {
+    color: red;
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 1000;
+    letter-spacing: 0.05em;
 }

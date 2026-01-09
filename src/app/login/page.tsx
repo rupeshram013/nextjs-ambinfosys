@@ -8,11 +8,13 @@ import tiktok from '../assets/images/logos/tiktok_black.png'
 import facebook from '../assets/images/logos/facebook_black.png'
 import instagram from '../assets/images/logos/tiktok_black.png'
 import loginposter from '../assets/images/advertisement/Login_Poster.png'
-
+import { useState } from 'react'
 
 
 export default function Login(){
 
+    const [email , emailchange] = useState('');
+    const [password , passwordchange] = useState('');
 
     return (
         <div id='outerformbox'>
@@ -23,11 +25,13 @@ export default function Login(){
                     <Link href={"/"} id='back'>🡠</Link>
 
                     <h1>Login</h1>
-
-                    <form action="/login" method='post'>
                     
-                        <input type="text" placeholder='Email'/>
-                        <input type="text" placeholder='Password'/>
+
+
+                    <form action='/login' method='post'>
+                    
+                        <input type="text" placeholder='Email' name='email' />
+                        <input type="text" placeholder='Password' name='password' />
 
 
                         <button type="submit">Login</button>

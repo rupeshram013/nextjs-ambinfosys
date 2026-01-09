@@ -36,15 +36,14 @@ export default async function CategoryPage({params} : {
   return (
     <div>
 
+        <h1>{categoryname}</h1>
+        
         <div id="category">
 
-
-
-
-
+          
         {
           
-          product.map((item:any) => {
+          product.slice(0,25).map((item:any) => {
             
             const imagepath = "/products/" + item.category + "/" + item.id + "/" +"1.png"
             const url = "/product/" + item.pname

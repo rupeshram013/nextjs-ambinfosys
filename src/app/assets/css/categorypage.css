@@ -10,12 +10,12 @@
     width: 100%;
     display: grid;
     padding-top: 15vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #category #product{
-    width: 12vw;
-    height: 35vh;
+    width: 16vw;
+    height: 32vh;
     display: block;
     margin: auto;
     margin-bottom: 3em;
@@ -52,32 +52,38 @@
 }
 
 #category #product #imagebox {
-    width: 200px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
+    margin: auto;
 }
 
 #category #product #imagebox img{
-    width: 200%;
+    width: 100%;
+
 }
 
 #category #product #bottom {
     text-align: center;
+
 }
 #category #product #bottom h5 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-transform: uppercase;  
     font-family: "Kanit", sans-serif;
     font-weight: 900;
     font-style: normal;
-    height: 1.5em;
+    height: 1.2em;
     overflow: hidden;
 }
 #category #product #bottom h6 {
     font-weight: 100;
     height: 1.5em;
     overflow: hidden;  
-    font-family: 'Khula';  
+    font-family: 'Khula';
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;  
 }
 #category #product #bottom #price {
     color: red;

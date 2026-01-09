@@ -27,10 +27,9 @@ try {
 
 
 export async function readingdata( query : string , data : string){
-
-  const res = await database.execute(query , data);
-  return res
   
+  const res = await database.execute(query , data);
+  return res 
 }
 
 
