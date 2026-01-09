@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { readingdata } from "../../../../../../config/db";
+import { readingdata } from "../../../../../config/db";
 
 export async function GET(req:Request , { params }: { params: Promise<{ name: string }> }
 ) {
