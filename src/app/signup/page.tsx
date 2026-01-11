@@ -14,14 +14,6 @@ import { useState } from 'react'
 
 export default function SignUp(){
 
-    const [fullname , namechange] = useState('');
-    const [username , usernamechange] = useState('');
-    const [email , emailchange] = useState('');
-    const [password1 , password1change] = useState('');
-    const [password2 , password2change] = useState('');
-
-
-
     return (
         <div id='outerformbox'>
             <div id="formbox">
@@ -32,13 +24,13 @@ export default function SignUp(){
 
                     <h1>SignUp</h1>
 
-                    <form action='/signup' method='post'>
+                    <form action='/api/form' method='POST'>
                         <input type="text" placeholder='FullName' name='fullname'/>
                         <input type="text" placeholder='UserName' name='username'/>
                         <input type="text" placeholder='Email' name='email'/>
                         <input type="text" placeholder='Password' name='password1'/>
                         <input type="text" placeholder='Password' name='password2'/>
-
+                        <input type="hidden" name='type' value='signup' />
 
                         <button type="submit">Signup</button>
                     

@@ -8,33 +8,34 @@ import left from '../../assets/images/logos/left.png'
 import { readingdata } from "../../../../config/db";
 import path from "path";
 
+
+
+async function productsdata(name:string){
+
+   const res = await fetch(`http://localhost:3000/api/products/${name}`)
+
+   if(!res.ok){
+
+      throw new Error("Failed to fetch product data");
+   }
+
+   return res.json()
+}
+
+
+
 export default async function ProductPage({params}:{
     params : {name:string};
 }){
    
    const name = (await params).name   
+
    
    const productname = name.replace(/%20/g, ' ');
    const finalname = productname.replace(/%22/g , '"')
    console.log("THE PRODUCT NAME :" , finalname)
 
-   // const data = await readingdata("select * from products where pname = ? " , [productname]);
-   // const id = await readingdata("select id from products where pname = ? " , [productname]);
-   
-   
-   // const productstruct= 
-   // {
-   //       product : data[0],
-   //       id : id[0][0].id,
-   //       category : data[0][0].category
-   // }
-   
-   // const specification = await readingdata(`select * from ${productstruct.category} where id = ${productstruct.id} ` , []);
-
-
-
-   const products = await fetch("localhost:3000/api/product/")
-
+   const products = await productsdata(finalname)
 
 
    return(
@@ -46,7 +47,7 @@ export default async function ProductPage({params}:{
             
          {
 
-            productstruct.product.map((item : any) => {
+            products.map((item : any) => {
 
                
                const images = [
@@ -141,7 +142,7 @@ export default async function ProductPage({params}:{
       
       <div id="specificationbox">
          
-         
+{/*          
          {
 
 
@@ -159,7 +160,7 @@ export default async function ProductPage({params}:{
 
 
          }
-
+ */}
 
 
 

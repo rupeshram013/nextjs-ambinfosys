@@ -30,13 +30,9 @@ async function productdata(){
 
 
 export default async function Home(){
-
-  const data = await productdata()
-
-  const product = await productdata();
-
-  console.log(product)
   
+  
+  const product = await productdata();
 
   return (
     <div>
@@ -79,8 +75,6 @@ export default async function Home(){
               maximumFractionDigits:0              
             }).format(item.price)
 
-            console.log(imagepath)
-            
             return (
               
               <Product pname={item.pname} specification={item.specification} price={price} imagepath={imagepath} url={url} key={item.id}></Product>

@@ -9,9 +9,5 @@ export async function GET(){
 
     const data = await readingdata("select * from products" , []);
 
-    console.log(data)
-
-
-
     return NextResponse.json(data[0])
 }

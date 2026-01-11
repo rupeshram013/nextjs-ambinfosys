@@ -13,9 +13,6 @@ import { useState } from 'react'
 
 export default function Login(){
 
-    const [email , emailchange] = useState('');
-    const [password , passwordchange] = useState('');
-
     return (
         <div id='outerformbox'>
             <div id="formbox">
@@ -28,11 +25,11 @@ export default function Login(){
                     
 
 
-                    <form action='/login' method='post'>
+                    <form action='/api/form' method='POST'>
                     
-                        <input type="text" placeholder='Email' name='email' />
-                        <input type="text" placeholder='Password' name='password' />
-
+                        <input type="text" placeholder='Email' name='email' required/>
+                        <input type="text" placeholder='Password' name='password'  required/>
+                        <input type="hidden" name='type' value='login' />
 
                         <button type="submit">Login</button>
                     

@@ -22,7 +22,6 @@ type ProductProps = {
 
 function Product({pname , specification , price , imagepath , url} : ProductProps) {
   
-    console.log("The URL" , url)
 
     return (
     
